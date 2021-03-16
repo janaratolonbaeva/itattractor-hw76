@@ -14,7 +14,8 @@ module.exports = {
 		}
 	},
 	getItems() {
-		return data;
+		const dataThirty = data.slice(-30);
+		return dataThirty;
 	},
 	addItem(item) {
 		item.id = nanoid();
